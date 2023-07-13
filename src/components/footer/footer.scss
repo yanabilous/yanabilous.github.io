@@ -1,0 +1,58 @@
+.footer {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 50px;
+
+   //position: fixed;
+   //left: 0;
+   //bottom: 0;
+   //width: 100%;
+   ////background-color: white;
+   ////color: white;
+   //text-align: center;
+
+  //position: static;
+  //bottom: 0;
+
+
+
+
+  //.logoTelegram{
+  //  width: 50px;
+  //  height: 50px;
+  //}
+
+  .logo {
+    //font-weight: 700;
+    color: #9f2602;
+    text-decoration: none;
+     font-weight: 800;
+      font-size: 20px;
+  }
+   .in {
+      font-weight: 800;
+      font-size: 20px;
+      color: #9f2602;
+      //line-height: 75px;
+     text-decoration: none;
+      border: 1px solid #9f2602;
+      padding: 5px 8px;
+
+       &:hover {
+        color: white;
+        background: #9f2602;
+      }
+    }
+  .contacts{
+     font-weight: 600;
+        font-size: 20px;
+
+    .phone{
+     padding-left: 32px;
+    }
+  }
+
+}

@@ -1,0 +1,47 @@
+.projects{
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h3{
+     font-weight: 400;
+      font-size: 60px;
+      color: #9f2602;
+    padding-bottom: 50px;
+    //text-transform: uppercase;
+    border-bottom: 1px solid black;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+
+    img{
+      width: 300px;
+      height: 250px;
+      padding: 30px;
+      border: 1px solid #9f2602;
+      &:hover{
+        border: 1px solid black;
+      }
+    }
+    .tittleProject{
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 600;
+      color: #9f2602;
+      &:hover{
+        border-bottom: 1px solid black;
+      }
+    }
+     p{
+       font-weight: 300;
+        font-size: 30px;
+        padding: 20px 0;
+    }
+  }
+
+
+
+}
