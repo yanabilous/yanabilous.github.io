@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b1c6a6a6.css",
-    "main.js": "/static/js/main.1ce473f3.js",
+    "main.js": "/static/js/main.9c0f0082.js",
     "static/media/p3.png": "/static/media/p3.088164daa54e76800abc.png",
     "static/media/img.PNG": "/static/media/img.efae1a0c2fbc4432f78c.PNG",
     "static/media/p1.png": "/static/media/p1.4c076215ec499f0cd1b3.png",
@@ -12,10 +12,10 @@
     "static/media/Telegram_(software)-Logo.wine.svg": "/static/media/Telegram_(software)-Logo.wine.ec4d28b0dd0f2b1fd4a9fe3e41cacdaa.svg",
     "index.html": "/index.html",
     "main.b1c6a6a6.css.map": "/static/css/main.b1c6a6a6.css.map",
-    "main.1ce473f3.js.map": "/static/js/main.1ce473f3.js.map"
+    "main.9c0f0082.js.map": "/static/js/main.9c0f0082.js.map"
   },
   "entrypoints": [
     "static/css/main.b1c6a6a6.css",
-    "static/js/main.1ce473f3.js"
+    "static/js/main.9c0f0082.js"
   ]
 }
