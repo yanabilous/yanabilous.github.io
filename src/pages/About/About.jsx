@@ -1,5 +1,6 @@
 import "./about.scss";
 import img from "../../img/img.PNG"
+import {useEffect, useState} from "react";
 
 const About = (props) => {
 
@@ -9,6 +10,16 @@ const handleDownload = () => {
   link.download = 'cv_bilous_fe.pdf';
   link.click();
   };
+  const [animationStarted, setAnimationStarted] = useState(false);
+
+  useEffect(() => {
+    const isFirstVisit = !localStorage.getItem('animationStarted');
+
+    if (isFirstVisit) {
+      setAnimationStarted(true);
+      localStorage.setItem('animationStarted', 'true');
+    }
+  }, []);
     return (
         <div className="about">
 
@@ -18,9 +29,9 @@ const handleDownload = () => {
                          src={img} alt="img"/>
                 </div>
 
-                <div className="aboutHeader">
-                    <h3>HELLO, I'M YANA</h3>
-                    <p className='upper'>I am passionate about building great web applications that meet the needs of users and clients alike.</p>
+                <div className={`aboutHeader ${animationStarted ? 'animation-started' : ''}`}>
+                    <h3  style={{animation: "slideLeft 0.5s linear forwards"}}>HELLO, I'M YANA</h3>
+                    <p  className='upper' >I am passionate about building great web applications that meet the needs of users and clients alike.</p>
                     <p>I am a professional with a passion for creating visually appealing,
                         interactive, and intuitive web applications. They possess a solid foundation in web development
                         technologies such as HTML, CSS, and JavaScript, as well as proficiency in frontend development
@@ -45,7 +56,7 @@ const handleDownload = () => {
             </div>
 
             <div className="mainAbout">
-                <div className="mainAboutWrapper">
+                <div className={`mainAboutWrapper ${animationStarted ? 'animation-started' : ''}`}>
                     <div>
                         <p>SOFT SKILLS</p>
                         <ul>
