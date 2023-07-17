@@ -34,8 +34,10 @@ const handleDownload = () => {
                         <h4>Yana Bilous</h4>
                         <h1>Frontend developer</h1>
                         <p>Professional development and formation is an important constant</p>
+                      <div className="btn_home">
                         <Link className="btn btnLeft" to={"mailto:yanabilouswork@gmail.com"} target="_blank">Contact me</Link>
                         <button className="btn btnRight" onClick={handleDownload}>Download cv</button>
+                        </div>
                     </div>
                     <div className="photoMain">
                         <img

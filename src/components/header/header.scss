@@ -1,20 +1,124 @@
+//.wrapper {
+//  position: sticky;
+//  top: 0;
+//  background-color: #ffffff;
+//  z-index: 1;
+//
+//  .header {
+//    margin: 0 auto;
+//    padding: 30px;
+//    max-width: 1200px;
+//    display: flex;
+//    align-items: center;
+//    justify-content: space-between;
+//    border-bottom: 1px solid #050505;
+//
+//    .burger-icon {
+//      background: red;
+//      width: 30px;
+//      height: 40px;
+//      display: flex;
+//      flex-direction: column;
+//      justify-content: space-between;
+//      cursor: pointer;
+//
+//      span {
+//        border-bottom: 2px solid white;
+//      }
+//    }
+//
+//    .open {
+//      display: block;
+//    }
+//
+//    .in {
+//      font-weight: 800;
+//      color: #9f2602;
+//      line-height: 75px;
+//      border: 1px solid #9f2602;
+//      padding: 5px 8px;
+//
+//      &:hover {
+//        color: white;
+//        background: #9f2602;
+//      }
+//    }
+//
+//    .logo {
+//      font-weight: 700;
+//      color: #9f2602;
+//    }
+//
+//    .nav {
+//      ul {
+//        display: flex;
+//        flex-direction: column;
+//        align-items: flex-end;
+//        background: #770303;
+//        position: absolute;
+//        top: 100%;
+//        right: 0;
+//        width: 50%;
+//        max-width: 50vw;
+//        transition: transform 0.3s ease-in-out;
+//        transform: translateX(100%);
+//        padding: 0;
+//        margin: 0;
+//
+//        &.open {
+//          transform: translateX(0);
+//        }
+//
+//        li {
+//          margin: 0 0 10px;
+//          list-style-type: none;
+//
+//
+//          &:hover {
+//            color: #9f2602;
+//             color: white;
+//            border-bottom: 1px solid #770303;
+//            font-weight: 400;
+//          }
+//
+//          &:active {
+//            color: #9f2602;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+
+
+//
+//.nav {
+//  /* Стилі для навігації... */
+//
+//  ul {
+//    /* Стилі для списку елементів меню... */
+//
+//    li {
+//      /* Стилі для кожного елемента меню... */
+//    }
+//  }
+//}
+
+
 .wrapper {
   position: sticky;
   top: 0;
   background-color: #ffffff;
   z-index: 1;
 
-
   .header {
-
     margin: 0 auto;
     padding: 30px;
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: 1px solid #050505;
-
 
     .in {
       font-weight: 800;
@@ -29,44 +133,94 @@
       }
     }
 
+    .burger-icon {
+      background: none;
+      border: none;
+      display: none;
+      cursor: pointer;
+
+      span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: #050505;
+        margin-bottom: 6px;
+      }
+    }
+
+    .open .burger-icon span {
+      background: #9f2602;
+    }
 
     .logo {
       font-weight: 700;
       color: #9f2602;
     }
 
+    .nav {
+      ul {
+        display: flex;
+        align-items: center;
 
-    .nav ul {
-      display: flex;
+        li {
+          margin: 0 30px;
+          list-style-type: none;
 
-      li {
-        margin: 0 30px 0;
-        list-style-type: none;
+          a {
+            text-decoration: none;
+            color: #050505;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
 
-        :hover {
-          color: #9f2602;
-          border-bottom: 1px solid #770303;
-          font-weight: 400;
-
+            &:hover {
+              color: #9f2602;
+              border-bottom: 1px solid #770303;
+              font-weight: 400;
+            }
+          }
         }
-
-        &:active {
-          color: #9f2602;
-        }
-
       }
     }
   }
 
-  a {
-    text-decoration: none;
-    color: #050505;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
+  @media (max-width: 768px) {
+    .header {
+      .nav {
+        display: none;
+      }
 
+      .burger-icon {
+        display: block;
+      }
 
+      .open .burger-icon {
+        color: #61dafb;
+      }
+
+      &.open .nav {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        //padding: 20px;
+        border-bottom: 1px solid #050505;
+        //opacity: 0.1;
+        transition: margin-right 2s ease-in-out;
+
+        ul {
+          //background: #9f2602;
+          //flex-direction: column;
+          align-items: flex-start;
+          //padding: 10px;
+
+          li {
+            margin: 5px;
+          }
+        }
+      }
+    }
   }
-
-
 }

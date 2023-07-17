@@ -27,9 +27,9 @@ const Projects = (props) => {
       <h3>My projects:</h3>
       {/*<span></span>*/}
 
-      <div className="cards">
+      <div className="cards cards_column">
         <div className={`floatLeft ${animationStarted ? "animation-started" : ""}`}>
-          <Link className="tittleProject" to="https://yanabilous.github.io/Parallax/" target="_blank">Ptoject
+          <Link className="tittleProject" to="https://yanabilous.github.io/Parallax/" target="_blank">Project
             1</Link>
           <p>Description: HTML/CSS (Parallax) </p>
           <Link to="https://gitlab.com/yanabilous/hw9.git" target="_blank">
@@ -55,10 +55,10 @@ const Projects = (props) => {
 
       </div>
 
-      <div className="cards">
+      <div className="cards cards_reverse">
         <img src={p2} alt={"img"}/>
         <div className={`floatRight ${animationStarted ? "animation-started" : ""}`}>
-          <Link className="tittleProject" to="https://yanabilous.github.io/step_project/" target="_blank">Ptoject
+          <Link className="tittleProject" to="https://yanabilous.github.io/step_project/" target="_blank">Project
             2</Link>
           <p>Description: HTML/CSS/JS </p>
           <Link to="https://gitlab.com/yanabilous/step_project.git" target="_blank">
@@ -81,9 +81,9 @@ const Projects = (props) => {
         </div>
       </div>
 
-      <div className="cards">
-         <div className={`floatLeft ${animationStarted ? "animation-started" : ""}`}>
-          <Link className="tittleProject" to="https://yanabilous.github.io/gulp/" target="_blank">Ptoject
+      <div className="cards cards_column">
+        <div className={`floatLeft ${animationStarted ? "animation-started" : ""}`}>
+          <Link className="tittleProject" to="https://yanabilous.github.io/gulp/" target="_blank">Project
             3</Link>
           <p>Description: HTML/SCSS/JS/gulp </p>
           <Link to="https://gitlab.com/yanabilous/hw2_gulp_scss.git" target="_blank">
@@ -107,10 +107,10 @@ const Projects = (props) => {
         <img src={p3} alt={"img"}/>
       </div>
 
-      <div className="cards">
+      <div className="cards cards_reverse">
         <img src={p4} alt={"img"}/>
-         <div className={`floatRight ${animationStarted ? "animation-started" : ""}`}>
-          <Link className="tittleProject" to="https://yanabilous.github.io/step_forkio/" target="_blank">Ptoject
+        <div className={`floatRight ${animationStarted ? "animation-started" : ""}`}>
+          <Link className="tittleProject" to="https://yanabilous.github.io/step_forkio/" target="_blank">Project
             4</Link>
           <p>Description: HTML/SCSS/JS/gulp/adaptive</p>
           <Link to="https://gitlab.com/yanabilous/step_project_forkio.git" target="_blank">
@@ -133,9 +133,9 @@ const Projects = (props) => {
         </div>
       </div>
 
-      <div className="cards">
-         <div className={`floatLeft ${animationStarted ? "animation-started" : ""}`}>
-          <Link className="tittleProject" to="https://buzarig.github.io/step-3/" target="_blank">Ptoject
+      <div className="cards cards_column">
+        <div className={`floatLeft ${animationStarted ? "animation-started" : ""}`}>
+          <Link className="tittleProject" to="https://buzarig.github.io/step-3/" target="_blank">Project
             5</Link>
           <p>Description: HTML/SCSS/JS/webpack </p>
           <Link to="https://gitlab.com/buzarig/visits-step" target="_blank">
@@ -158,11 +158,11 @@ const Projects = (props) => {
         </div>
         <img src={p7} alt={"img"}/>
       </div>
-      <div className="cards">
+      <div className="cards cards_reverse">
         <img alt={"img"}
              src={"https://as1.ftcdn.net/v2/jpg/04/77/20/58/1000_F_477205869_ChRM4P1S0YifaOttDme8YeP9lPA0W7HF.jpg"}/>
-         <div className={`floatRight ${animationStarted ? "animation-started" : ""}`}>
-          <Link className="tittleProject" to="https://yanabilous.github.io/comics_mar/" target="_blank">Ptoject
+        <div className={`floatRight ${animationStarted ? "animation-started" : ""}`}>
+          <Link className="tittleProject" to="https://yanabilous.github.io/comics_mar/" target="_blank">Project
             6</Link>
           <p>Description: React</p>
           <Link to="https://github.com/yanabilous/comics_mar" target="_blank">
