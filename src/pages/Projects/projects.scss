@@ -1,11 +1,12 @@
 .projects {
   max-width: 1200px;
   margin: 0 auto;
+   padding: 20px;
 
   h3 {
     font-weight: 400;
     font-size: 60px;
-    color: #9f2602;
+    color: #e4622a;
     padding-bottom: 50px;
     //text-transform: uppercase;
     border-bottom: 1px solid black;
@@ -52,7 +53,7 @@
       width: 300px;
       height: 250px;
       padding: 30px;
-      border: 1px solid #9f2602;
+      border: 1px solid #e4622a;
 
       &:hover {
         border: 1px solid black;
@@ -64,7 +65,7 @@
       text-transform: uppercase;
       font-size: 30px;
       font-weight: 600;
-      color: #9f2602;
+      color: #e4622a;
 
       &:hover {
         border-bottom: 1px solid black;
@@ -83,6 +84,8 @@
   .projects {
     max-width: 290px;
     margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
 
     h3 {
       font-size: 30px;

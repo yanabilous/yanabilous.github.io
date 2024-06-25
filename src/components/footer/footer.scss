@@ -1,4 +1,6 @@
 .footer {
+  //position: fixed;
+  //bottom: 0;
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -27,7 +29,7 @@
 
   .logo {
     //font-weight: 700;
-    color: #9f2602;
+    color: #e4622a;
     text-decoration: none;
      font-weight: 800;
       font-size: 20px;
@@ -35,15 +37,15 @@
    .in {
       font-weight: 800;
       font-size: 20px;
-      color: #9f2602;
+      color: #e4622a;
       //line-height: 75px;
      text-decoration: none;
-      border: 1px solid #9f2602;
+      border: 1px solid #e4622a;
       padding: 5px 8px;
 
        &:hover {
         color: white;
-        background: #9f2602;
+        background: #e4622a;
       }
     }
   .contacts{
@@ -61,7 +63,7 @@
     max-width: 290px;
     .contacts{
       font-size: 15px;
-      ont-weight: 400;
+      font-weight: 400;
     }
   }
 }

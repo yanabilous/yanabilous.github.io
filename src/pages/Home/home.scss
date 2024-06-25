@@ -1,22 +1,36 @@
 .home {
-  //margin: 0 auto;
-  //display: flex;
-  //overflow: hidden;
+
 
   .animation-started .homeHeader {
     animation-play-state: paused;
   }
 
   .homeHeader {
-    max-width: 1200px;
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
-    //margin: 60px 0 60px 0;
     text-transform: uppercase;
     padding: 80px 0 80px 0;
 
+    position: relative;
+    overflow: hidden;
+
+    .background-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
     .tittleHome {
+      position: relative;
+      z-index: 1;
+
       animation: slideRight 2s linear 1;
 
 
@@ -59,12 +73,14 @@
 
       .btnLeft {
         color: white;
-        background: #9f2602;
-        border: 1px solid #9f2602;
+        background: #e4622a;
+        border: 1px solid #e4622a;
+
 
         &:hover {
-          color: #9f2602;
+          color: #e4622a;
           background: white;
+          transition: color 2s ease, background 2s ease;
 
         }
       }
@@ -78,43 +94,92 @@
         &:hover {
           color: white;
           background: black;
+          transition: color 2s ease, background 2s ease;
 
         }
       }
     }
 
     .photoMain {
-      // width: 500px;
-      //  height: 500px;
-      //background: black;
+      position: relative;
+      z-index: 1;
+
       img {
         max-width: 500px;
         height: 500px;
-        //max-width: 300px;
-        //height: 200px;
       }
 
     }
   }
 
   .homeMain {
-    background: #9f2602;
+
+    position: relative;
+    z-index: 0;
+
+    .main-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      padding-top: 30px;
+
+      .title2 {
+        z-index: 4;
+        font-weight: 400;
+        font-size: 140px;
+        padding: 30px 0 0 0;
+        margin-left: 30px;
+        color: #e4622a;
+      }
+
+      .additional-text {
+        font-weight: 400;
+        font-size: 20px;
+        color: #777574;
+      }
+    }
+
 
     .homeMainWrapper {
+      //position: relative;
+      //z-index: 1;
 
       max-width: 1200px;
       margin: 0 auto;
-      color: white;
-      font-weight: 600;
+      color: black;
+      font-weight: 300;
       font-size: 40px;
+          padding: 20px;
 
-      p {
-        font-weight: 300;
-        font-size: 40px;
-        padding: 30px 0 0 0;
+
+      .blur-bg {
+        //position: absolute;
+        //top: 0;
+        //left: 0;
+        width: 100%;
+        height: 100vh;
+        //overflow: hidden;
+        //z-index: -1;
+        display: flex;
+
       }
 
+
+      .parallax {
+        background-image: url("../../img/level.png");
+        width: 100%;
+        //min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 4;
+      }
+
+
       .listHome {
+        position: relative;
+        z-index: 3;
         display: flex;
         justify-content: space-around;
         animation: slideRight 4s linear 1;
@@ -133,10 +198,15 @@
           }
         }
 
+        ul {
+          margin-left: 20px;
 
-        li {
-          padding: 20px;
+          li {
+            padding: 20px;
+          }
         }
+
+
       }
 
 
@@ -148,7 +218,7 @@
   .home {
     .homeHeader {
       margin: 0 auto;
-      max-width: 290px;
+      //max-width: 290px;
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
@@ -157,12 +227,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px;
 
         h1 {
           font-size: 40px;
           text-align: center;
         }
-        p{
+
+        p {
           text-align: center;
         }
       }
@@ -185,28 +257,51 @@
       }
 
     }
-    .homeMain{
-       .homeMainWrapper{
-      max-width: 290px;
-         font-size: 20px;
-         p{
-               font-size: 20px;
-         }
-         .listHome{
-           flex-direction: column;
-         }
-         ul{
-           margin: 0;
-         }
-         li{
-               padding: 10px;
-         }
+
+    .homeMain {
+      padding: 20px;
+
+      .main-header {
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        .title2 {
+
+          font-weight: 400;
+          font-size: 60px;
+          padding: 30px 0 0 0;
+          margin-left: 30px;
+
+        }
+
+      }
+
+      .homeMainWrapper {
+        max-width: 290px;
+        font-size: 20px;
+
+        .blur-bg {
+          flex-direction: column-reverse;
+          height: 100%;
+        }
+
+        p {
+          font-size: 20px;
+        }
+
+        .listHome {
+          flex-direction: column;
+        }
+
+        ul {
+          margin: 0;
+        }
+
+        li {
+          padding: 10px;
+        }
+      }
     }
-    }
-
-
-
   }
-
-
 }
+

@@ -1,37 +1,109 @@
-.contact{
+.contact {
+  overflow: hidden;
+   display: flex;
+        justify-content: center;
 
 
-  //background: #9f2602;
-  .contactWrapper{
-    max-width: 1200px;
-    margin: 0 auto;
-    //color: white;
-    .flex{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column;
-      border-bottom: 1px solid black;
+  .contactWrapper {
+    width: 1200px;
+   //margin: 0 auto;
+     display: flex;
+        justify-content: center;
 
-      a{
-        padding: 40px;
+
+
+    .content {
+
+      //margin: 0 auto;
+      position: relative;
+      z-index: 3;
+      max-width: 700px;
+      height: 300px;
+      background-color: white;
+      box-shadow: 0 0 30px rgba(178, 175, 164, 0.7);
+      opacity: 0.9;
+      margin-top: 15%;
+
+      .title-contacts {
+        font-size: 30px;
+        font-weight: 300;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+
+      .flex {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .icons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          :hover {
+            background: #e4622a;
+            transition: background 1s ease;
+          }
+
+          a {
+            padding: 30px 40px;
+            border-radius: 50% 50%;
+            border: solid 1px black;
+            margin: 0 5px;
+          }
+        }
+
+        .mail {
+          margin-top: 40px;
+
+          a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
       }
     }
   }
-  .logoTelegram{
-    width: 50px;
-    height: 50px;
-  }
 }
 
-@media (max-width: 767px){
-  .contact{
-    max-width: 290px;
-    margin: 0 auto;
-    .contactWrapper{
-      h3{
-        text-align: center;
+@media (max-width: 767px) {
+  .contact {
+    overflow: hidden;
+
+
+    .contactWrapper {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      .content {
+        max-width: 290px;
+        height: 100%;
+        margin-top: 40px;
+
+        .title-contacts {
+          text-align: center;
+        }
+
+        .flex {
+          .icons {
+            flex-direction: column;
+
+            a {
+              margin: 5px 0;
+            }
+          }
+
+        }
       }
+
     }
   }
 }
