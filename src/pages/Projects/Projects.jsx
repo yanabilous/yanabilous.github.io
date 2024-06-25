@@ -3,10 +3,7 @@ import {Link} from "react-router-dom";
 import p1 from "../../img/pr1.png";
 import p2 from "../../img/pr2.png";
 import p3 from "../../img/pr3.png";
-// import p3 from "../../img/p3.png";
-// import p4 from "../../img/p4.png";
-// // import p5 from "../../img/p5.png";
-// import p7 from "../../img/p7.png";
+
 import {useEffect, useState} from "react";
 
 const Projects = (props) => {
@@ -113,7 +110,7 @@ const Projects = (props) => {
         </div>
         <Link to="https://yanabilous.github.io/comics_mar/" target="_blank"> <img src={p3} alt={"img"}/></Link>
 
-        {/*<img src={p3} alt={"img"}/>*/}
+
 
       </div>
 

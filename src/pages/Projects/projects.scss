@@ -50,10 +50,12 @@
     margin-top: 70px;
 
     img {
-      width: 300px;
+      width: 350px;
       height: 250px;
       padding: 30px;
       border: 1px solid #e4622a;
+      object-fit: cover;
+
 
       &:hover {
         border: 1px solid black;
@@ -84,8 +86,9 @@
   .projects {
     max-width: 290px;
     margin: 0 auto;
-    margin-top: 100px;
+    //margin-top: 100px;
     padding: 20px;
+    overflow: hidden;
 
     h3 {
       font-size: 30px;

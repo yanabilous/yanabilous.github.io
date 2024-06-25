@@ -39,7 +39,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="linkedin">
           <Link className="in" to="https://www.linkedin.com/in/yana-bilous-6270b9194/" target="_blank">
             in
           </Link>

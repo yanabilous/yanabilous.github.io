@@ -17,7 +17,7 @@
     .img-logo {
       width: 80px;
       height: 80px;
-          margin-top: 10px;
+      margin-top: 10px;
     }
 
     .in {
@@ -52,10 +52,10 @@
       background: #e4622a;
     }
 
-    .logo {
-      font-weight: 700;
-      color:#e4622a;
-    }
+    //.logo {
+    //  font-weight: 700;
+    //  color:#e4622a;
+    //}
 
     .nav {
       ul {
@@ -92,6 +92,22 @@
 
   @media (max-width: 768px) {
     .header {
+      padding: 5px 20px;
+      //width: 100%;
+      overflow: hidden;
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        width: 30px;
+
+
+
+      }
+      .linkedin{
+        margin-bottom: 10px;
+      }
+
       .nav {
         display: none;
       }
@@ -105,7 +121,8 @@
       }
 
       &.open .nav {
-        display: block;
+        overflow: hidden;
+        //display: block;
         position: absolute;
         top: 100%;
         left: 0;
@@ -113,9 +130,15 @@
         background-color: #ffffff;
         border-bottom: 1px solid #050505;
         transition: margin-right 2s ease-in-out;
+        display: flex;
+
 
         ul {
-          align-items: flex-start;
+          //width: 100%;
+          //align-items: flex-start;
+          justify-content: center;
+          width: 100%;
+          padding: 0;
 
           li {
             margin: 5px;
