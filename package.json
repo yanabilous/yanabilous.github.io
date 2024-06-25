@@ -1,6 +1,6 @@
 {
-  "homepage": "https://yanabilous.com/",
-  "name": "cv_bilous test",
+  "homepage": "https://yanabilous.github.io/cv_bilous/",
+  "name": "cv_bilous",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
