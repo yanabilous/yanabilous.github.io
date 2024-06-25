@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>CV_Bilous</title>
+        <title>CV_Bilous test</title>
         <link rel="icon" href={favicon}/>
       </Helmet>
       <Header/>
