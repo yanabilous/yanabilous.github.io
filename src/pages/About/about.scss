@@ -39,33 +39,31 @@
       //
       //}
 
-.typing {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: .10em solid #e4622a;
-  animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
-}
+      .typing {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: .10em solid #e4622a;
+        animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+      }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 70%;
-  }
-}
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 70%;
+        }
+      }
 
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #e4622a;
-  }
-}
-
-
+      @keyframes blink-caret {
+        from, to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #e4622a;
+        }
+      }
 
 
       @keyframes slideLeft {
@@ -185,6 +183,7 @@
 
 @media (max-width: 767px) {
   .about {
+    overflow: hidden;
 
 
     .aboutWrapper {
@@ -193,6 +192,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      overflow: hidden;
 
       .aboutHeader {
         margin: 0 20px;
