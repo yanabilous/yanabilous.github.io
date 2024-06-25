@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.962e3593.css",
-    "main.js": "/static/js/main.f7fdd542.js",
-    "static/media/main.mp4": "/static/media/main.8a7b82ece356b4fd86fb.mp4",
-    "static/media/pr3.png": "/static/media/pr3.c5ad8cdda2abfb642952.png",
-    "static/media/pr2.png": "/static/media/pr2.365f6b3bd2d315f74cb9.png",
-    "static/media/pr1.png": "/static/media/pr1.a0cfee9158ae0d49fa05.png",
-    "static/media/level.png": "/static/media/level.14e8c94eed18745f060e.png",
-    "static/media/img.PNG": "/static/media/img.efae1a0c2fbc4432f78c.PNG",
-    "static/media/Logo (1).svg": "/static/media/Logo (1).dd40925fde88bb99010387a059521b5b.svg",
-    "static/media/favicon.ico": "/static/media/favicon.c360501f3f1ff6a1482c.ico",
-    "static/media/sprite.svg": "/static/media/sprite.e19bdc0a7350ecb8fb8942d835925303.svg",
-    "static/media/Logo.svg": "/static/media/Logo.ab691280cbaa8e57b5f47ae1f892baa6.svg",
-    "index.html": "/index.html",
-    "main.962e3593.css.map": "/static/css/main.962e3593.css.map",
-    "main.f7fdd542.js.map": "/static/js/main.f7fdd542.js.map"
+    "main.css": "/cv_bilous/static/css/main.2d14abe0.css",
+    "main.js": "/cv_bilous/static/js/main.a50c2d44.js",
+    "static/media/main.mp4": "/cv_bilous/static/media/main.8a7b82ece356b4fd86fb.mp4",
+    "static/media/pr3.png": "/cv_bilous/static/media/pr3.c5ad8cdda2abfb642952.png",
+    "static/media/pr2.png": "/cv_bilous/static/media/pr2.365f6b3bd2d315f74cb9.png",
+    "static/media/pr1.png": "/cv_bilous/static/media/pr1.a0cfee9158ae0d49fa05.png",
+    "static/media/level.png": "/cv_bilous/static/media/level.14e8c94eed18745f060e.png",
+    "static/media/img.PNG": "/cv_bilous/static/media/img.efae1a0c2fbc4432f78c.PNG",
+    "static/media/Logo (1).svg": "/cv_bilous/static/media/Logo (1).dd40925fde88bb99010387a059521b5b.svg",
+    "static/media/favicon.ico": "/cv_bilous/static/media/favicon.c360501f3f1ff6a1482c.ico",
+    "static/media/sprite.svg": "/cv_bilous/static/media/sprite.e19bdc0a7350ecb8fb8942d835925303.svg",
+    "static/media/Logo.svg": "/cv_bilous/static/media/Logo.ab691280cbaa8e57b5f47ae1f892baa6.svg",
+    "index.html": "/cv_bilous/index.html",
+    "main.2d14abe0.css.map": "/cv_bilous/static/css/main.2d14abe0.css.map",
+    "main.a50c2d44.js.map": "/cv_bilous/static/js/main.a50c2d44.js.map"
   },
   "entrypoints": [
-    "static/css/main.962e3593.css",
-    "static/js/main.f7fdd542.js"
+    "static/css/main.2d14abe0.css",
+    "static/js/main.a50c2d44.js"
   ]
 }
